@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<link rel = "stylesheet" href = "smart_shopping.css">
+
+<body>
+    <div id = "sectionHome">
+    <div class="bg-container d-flex flex-column justify-content-end">
+        <div class="background">
+            <h1 class="main-heading">Groceries</h1>
+            <p class="paragraph">Happy Shopping</p>
+            <div>
+            <button class="button button-green" onclick = "display('sectionList')">Get Started</button>
+            <button class="button chatbot" onclick = "display('sectionEnquiry')">ChatBot</button>
+        </div>
+        </div>
+    </div>
+</div>
+<div id = "sectionList">
+    <div class = "bg-container">
+        <div class = "main-heading">
+        <h1 class = "heading">Grocery</h1>
+        </div>
+        <div class = "container">
+        <div class = "d-flex flex-row" >
+            <div class = "text"onclick="display('sectionAtta')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\Atta.jpg" class = "image"/>
+            </div>
+            <p class = "para">Atta, Rice and Dal</p>
+        </div>
+        <div class = "text" onclick="display('sectionSpices')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\Spices_salt_sugar.jpg" class = "image"/>
+            </div>
+            <p class = "para">Spices, Salt & Sugar</p>
+        </div>
+        <div class = "text" onclick="display('sectionOil')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\oil.jpg" class = "image"/>
+            </div>
+            <p class = "para">Oil & Ghee</p>
+        </div>
+        <div class = "text" onclick="display('sectionDryfruit')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\dryfruits.jpg" class = "image"/>
+            </div>
+            <p class = "para">Dry Fruits, Nuts &Seeds</p>
+        </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "d-flex flex-row" >
+            <div class = "text" onclick="display('sectionSnack')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\Snacks.jpg" class = "image"/>
+            </div>
+            <p class = "para">Snacks & Packaged Food</p>
+        </div>
+        <div class = "text" onclick="display('sectionNoodle')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\pasta.jpg" class = "image"/>
+            </div>
+            <p class = "para">Noodles & Pasta</p>
+        </div>
+        <div class = "text" onclick="display('sectionBeverages')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\beverages.jpg" class = "image"/>
+            </div>
+            <p class = "para">Beverages</p>
+        </div>
+        <div class = "text" onclick="display('sectionDetergents')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\Detergents.jpg" class = "image"/>
+            </div>
+            <p class = "para">Detergents & Laundry</p>
+        </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "d-flex flex-row" >
+            <div class = "text" onclick="display('sectionBody')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\body.jpg" class = "image"/>
+            </div>
+            <p class = "para">Body & Skincare</p>
+        </div>
+        <div class = "text" onclick="display('sectionHair')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\haircare.jpg" class = "image"/>
+            </div>
+            <p class = "para">Hair Care</p>
+        </div>
+        <div class = "text" onclick="display('sectionHygiene')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\womens.jpg" class = "image"/>
+            </div>
+            <p class = "para">Womens Hygeiene & Baby Care</p>
+        </div>
+        <div class = "text" onclick="display('sectionOral')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\oralcare.jpg" class = "image"/>
+            </div>
+            <p class = "para">Oral Care & Wellness</p>
+        </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "d-flex flex-row" >
+            <div class = "text" onclick="display('sectionKitchen')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\home.jpg" class = "image"/>
+            </div>
+            <p class = "para">Home & Kitchen</p>
+        </div>
+        <div class = "text" onclick="display('sectionHouse')">
+            <div>
+                <img src = "C:\Users\akula\Downloads\Projects2023\household.jpg" class = "image"/>
+            </div>
+            <p class = "para">Household & Cleaning</p>
+        </div>
+        </div>
+        <button class = "btn btn-primary" onclick="display('sectionHome')">Back</button>
+    </div>
+    </div>
+</div>
+<div id = "sectionHouse">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Cleaning Club</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\bathroomcleaner1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Toilet Cleaner Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-14,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\floorcleaner1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Floor & Other Cleaner Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-14,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\untensils1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Utensils Cleaner Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-14,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionKitchen">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Home & Kitcjen Shop</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\storage1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Storage Container Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-13,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\bottle1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Bottles Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-13,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\cookware.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Cookware Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-13,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionOral">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Oral Care & Wellness</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\toothpaste1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Toothpastes Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-12,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\mouthwash1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Mouthwash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-12,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src ="C:\Users\akula\Downloads\Projects2023\handwash1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Handwash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-12,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionHygiene">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Women's Hygiene & Baby Care</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\sanitarypad1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Sanitary Needs Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-11,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\diapers1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Diapers Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-11,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\babycare1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Baby Bath & Skin Care Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-11,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionHair">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Hair Care Studio</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\shampoo1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Shampoo Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-10,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\hairoil.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Hair OilItems</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-10,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\haircolor1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Hair Colour & more Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-10,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionBody">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Skincare Boutique</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\soups1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Soap Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-9,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\bodywash1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Body Wash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-9,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\face1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Face Wash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-9,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionDetergents">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Washing Gang</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\bucket1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Bucket Wash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-8,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\machine1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Machine Wash Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-8,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\fabric1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Fabric Care Drink Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-8,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionBeverages">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Beverage Cafe</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\softdrink1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Soft Drink Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-7,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\coffee1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Coffee Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-7,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\fruit1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Juices & Fruit Drink Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-7,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+    </div>
+<div id = "sectionNoodle">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Quick Meal Mania</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\noodle1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Noodles Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-6,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\pasta1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Pasta Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-6,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\soup1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Soup Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-6,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+    </div>
+<div id = "sectionSnack">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Snacking Corner</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\bisc1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Biscuits & Cookies Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-5,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\choco1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Chocolates Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-5,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\chips1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Chips & Namkeen Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-5,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionDryfruit">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Eat Good Galleryl</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\Akmonds1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Almonds</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-4,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\cashews1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Cashews</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-4,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\dates1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Dates & Raisins</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-4,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionSpices">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Flavour Fantasy</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\spices1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Spices Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-2,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\salt1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Salt Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-2,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\sugar1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Sugar Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-2,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionOil">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">The Essential Rack</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\oil1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Oil</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-3,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\ghee1.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Ghee</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-3,Row-2</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionAtta">
+    <div class = "bg-container">
+        <div class = "main-heading">
+            <h1 class = "heading">Atta Rice Dal</h1>
+        </div>
+        <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\Aashirvad.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Atta(flour) Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-1,Row-1</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\rice.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Rice Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-1,Row-2</p>
+    </div>
+    </div>
+    <div class = "d-flex flex-row container">
+        <div>
+            <img src = "C:\Users\akula\Downloads\Projects2023\dal.jpg" class = "image"/>
+        </div>
+        <div class = "pad">
+        <p class = "brand">Dal Items</p>
+        <p class = "para"> Availability : Instock</p>
+        <p class = "para"> Available at Column-1,Row-3</p>
+    </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionList')">Back</button>
+    </div>
+</div>
+<div id = "sectionEnquiry">
+    <div class = "bg-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justifu-content-center">
+     <div>
+         <p class = "para">Hello, How are You ?</p>
+         <p class = "para">Get Started by selecting your query</p>
+     </div>
+     <div class = "d-flex flex row justify-content-center">
+         <button class = "buttonquery" onclick="display('sectionCsm')">Contact Store Manager</button>
+         <button class = "buttonquery" onclick="display('sectionOa')">Offer's Aavailable</button>
+         <button class = "buttonquery" onclick="display('sectionSd')">Special Discounts</button>
+     </div>
+     <div class = "d-flex flex row justify-content-center">
+         <button class = "buttonquery" onclick="display('sectionOsp')">Out of Stock Products</button>
+         <button class = "buttonquery" onclick="display('sectionUbd')">Upcoming Big Discount</button>
+         <button class = "buttonquery" onclick="display('sectionEs')">Events in Store</button>
+     </div>
+     <div class = "d-flex flex row justify-content-center">
+         <button class = "buttonquery" onclick="display('sectionTmw')">This month Winners</button>
+         <button class = "buttonquery" onclick="display('sectionUld')">Upcoming lattery dates</button>
+         <button class = "buttonquery" onclick="display('sectionCs')">Clearence Sale</button>
+     </div>
+     <div class = "d-flex flex row justify-content-center">
+         <button class = "buttonquery" onclick="display('sectionMes')">Month Ending Sale</button>
+         <button class = "buttonquery" onclick="display('sectionSu')">Stock Updates</button>
+         <button class = "buttonquery" onclick="display('sectionLcd')">Festival Sales</button>
+     </div>
+     <div class = "d-flex flex row justify-content-center">
+         <button class = "buttonquery" onclick="display('sectionFs')"> Order Online</button>
+         <button class = "buttonquery" onclick="display('sectionOo')"> Billing Instructions</button>
+     </div>
+    </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionHome')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionCsm">
+     <div class = "query-container">
+      <div class = "main-heading">
+          <h1 class = "heading">ChatBot</h1>
+      </div>
+      <div class = "container d-flex flex-column justify-content-end pud">
+      <div>
+          <p>Store Manager Name : Ramadhadu</p>
+          <p>Contact Number     : 9899999999</p>
+          <p>Email Id           : grocerymanager@gmail.com</p>
+      </div>
+  </div>
+     <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+  </div>
+  </div>
+  <div id = "sectionOa">
+     <div class = "query-container">
+      <div class = "main-heading">
+          <h1 class = "heading">ChatBot</h1>
+      </div>
+      <div class = "container d-flex flex-column justify-content-end pud">
+      <div>
+          <p class = "heading">Today Offers</p>
+          <p>Non Stick pan at Rs.99</p>
+          <p>Glass Tumblers set of 6 Rs.273</p>
+          <p>Cello Opalware Dinner Set Just Rs.499</p>
+          <p>Koryo Hair Styler Set Just Rs.999</p>
+      </div>
+  </div>
+     <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+  </div>
+  </div>
+  <div id = "sectionSd">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Special Discount</p>
+         <p>Buy 1 get 1 on biscuits(Tigger,HidenSick,etc..)</p>
+         <p>10% off on untensils</p>
+         <p>Rs.50 Off if purchase amount is above Rs.699</p>
+         <p>Rs.100 off if purchase amount is above Rs.1000</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionOsp">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Information on Stock</p>
+         <p>There is no item out of stack</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionUbd">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Big Discount</p>
+         <p>80% off on Pet Food</p>
+         <p>60% off on BabyCare</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionEs">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Events</p>
+         <p>New Product Launching on the date(12-12-2024)</p>
+         <p>Culture Events</p>
+         <p>Expert Talks</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionTmw">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Winners of the month</p>
+         <p>Nippun price money of Rs.10000 in Lucky Lottery</p>
+         <p>Devi won Electric Cooker in Bubber lottery</p>
+         <p>Rajesh won Gold coin in Bupper lottery</p>
+         <p>Raju won Fridge in Events</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionUld">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Upcoming Lottery Events</p>
+         <p>Bupper Lottery on (01-12-2024)</p>
+         <p>Devali Special Lottery on Devali</p>
+         <p>Special Lottery in month Endings</p>
+         <p>Spin and Win is Everyday</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionCs">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Clearance Sell</p>
+         <p>This Sale Available at all Month Endings</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionMes">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Month Ending Sale</p>
+         <p>In this there are so many Special offer on last date of Month</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionSu">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Sptock Updates</p>
+         <p>Arrived new Soaps, Untensils, Snacks, etc..</p>
+         <p>There is no Chance of Outoff Stack in Mall</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionFs">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Festival Sale</p>
+         <p>Divali Sale</p>
+         <p>Dasara Sale</p>
+         <p>Sakrathi Sale</p>
+         <p>             and Many more...</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionOo">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Online Order</p>
+         <p>You can Order Online buy visiting our website.</p>
+         <p>Its speed and Quick Delivery</p>
+         <p>If any Damaged Item you can return the item</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+ <div id = "sectionBi">
+    <div class = "query-container">
+     <div class = "main-heading">
+         <h1 class = "heading">ChatBot</h1>
+     </div>
+     <div class = "container d-flex flex-column justify-content-end pud">
+     <div>
+         <p class = "heading">Instruction on Billing</p>
+         <p>You can pay Amount by credit card or debit card</p>
+         <p>UPI Payments also accepeted here</p>
+         <p>It is your resposibility if banks or not working while online payment</p>
+     </div>
+ </div>
+    <button class = "btn btn-primary mar" onclick="display('sectionEnquiry')">Back</button>
+ </div>
+ </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

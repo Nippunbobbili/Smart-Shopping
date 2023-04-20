@@ -1,0 +1,46 @@
+.bg-container{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/41/43/18/1000_F_241431868_8DFQpCcmpEPVG0UvopdztOAd4a6Rqsoo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.main-heading{
+    background-color:chartreuse;
+    font-family:"Roboto";
+    color:white;
+    /* padding:15px; */
+    /* margin:10px; */
+}
+
+.heading{
+    padding:20px;
+    font-weight:bold;
+    /* margin:10px; */
+}
+
+.container{
+    background-color:white;
+    padding:15px;
+}
+
+.image{
+    height:120px;
+    width:150px;
+    margin:15px;
+}
+.pad{
+    padding:10px;
+}
+
+.brand{
+    font-family:"ROBOTO";
+    color:black;
+}
+.para{
+    font-family:"Roboto";
+    color:black;
+}
+
+.mar{
+    margin:20px;
+}
